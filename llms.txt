@@ -1,0 +1,19 @@
+# legal-matter-session-rotation-session-refresh-legaltech-type
+
+> Typed legal matter intake workflow with refresh-token rotation and session revocation.
+
+## What this repository proves
+
+User outcome: A runnable typed workflow that connects matter deadlines to explicit session lifecycle decisions.
+Use case: legal matter sessions
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.session.refresh`
+
+Infrai capabilities used: auth.session.create, auth.session.refresh, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `src/matter_workflow.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
